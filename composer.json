@@ -1,0 +1,33 @@
+{
+  "name": "manzadey/tilda",
+  "description": "API integration of a Tilde project with its own website",
+  "keywords": [
+    "tilda",
+    "api",
+    "integration"
+  ],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey",
+      "email": "andrey.manzadey@gmail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/manzadey"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.0"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Manzadey\\Tilda\\": "src/"
+    }
+  }
+}
