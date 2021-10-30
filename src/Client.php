@@ -124,6 +124,26 @@ class Client
         ]);
     }
 
+    public function getPublicKey() : string
+    {
+        return $this->publicKey;
+    }
+
+    public function setPublicKey(string $publicKey) : void
+    {
+        $this->publicKey = $publicKey;
+    }
+    
+    public function getSecretKey() : string
+    {
+        return $this->secretKey;
+    }
+
+    public function setSecretKey(string $secretKey) : void
+    {
+        $this->secretKey = $secretKey;
+    }
+
     private function getMethodUrl(string $method) : string
     {
         return "$this->url/$this->apiVersion/$method";
